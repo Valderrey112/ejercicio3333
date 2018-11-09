@@ -53,12 +53,12 @@ public class Alumno {
         String numeroCorto;
         nombreCorto = nombre;
         numeroCorto = numeroMatricula;
-        if (nombre.length() > 2) {
+        if (nombre.length() > 3) {
              nombreCorto = nombre.substring(0 ,3);
         }
-        if (numeroMatricula.length() > 3) {
+        if (numeroMatricula.length() > 4) {
              numeroCorto = numeroMatricula.substring(0 ,4);
         }
-        return nombreCorto.substring(0 ,3) + numeroCorto.substring(0, 4);
+        return nombreCorto + numeroCorto;
     }
 }
