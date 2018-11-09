@@ -10,17 +10,23 @@ public class Alumno {
     /**
      * Crea un alumno nuevo
      */
-    public Alumno(String nombreCompleto, String numeroMatriculaAlumno, int edadAlumno) {
-        nombre = nombreCompleto;
-        numeroMatricula = numeroMatriculaAlumno;
-        edad = edadAlumno;
+    public Alumno(String nombreCompleto, String numeroMatriculaAlumno, int edadAlumno){
+            nombre = nombreCompleto;
+            numeroMatricula = numeroMatriculaAlumno;
+            edad = edadAlumno;
+        if (nombre.length() < 3) {
+             System.out.println("El nombre tiene menos de 3 caracteres");
+        }
+        if (numeroMatricula.length() < 4) {
+            System.out.println("El numero de matricula tiene menos de 4 caracteres");
+        }
     }
 
     /**
      * Devuelve el nombre completo del alumno
      */
     public String getNombre() {
-        return nombre;
+         return nombre;
     }
     
     /**
